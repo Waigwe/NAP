@@ -5,19 +5,15 @@ import Notifications from "@material-ui/icons/Notifications";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 // import ContentPaste from "@material-ui/icons/ContentPaste";
 import BubbleChart from "@material-ui/icons/BubbleChart";
-import LocationOn from "@material-ui/icons/LocationOn";
-import Unarchive from "@material-ui/icons/Unarchive";
+import BookmarkBorder from "@material-ui/icons/BookmarkBorder";
 import LibraryAdd from "@material-ui/icons/LibraryAdd";
-
 // core components/views
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import Alerts from "views/Alerts/Alerts.jsx";
 import Following from "views/Following/Following.jsx";
 import JobDiary from "views/JobDiary/JobDiary.jsx";
-import Maps from "views/Maps/Maps.jsx";
-import NotificationsPage from "views/Notifications/Notifications.jsx";
-import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
+import NewEmployers from "views/NewEmployers/NewEmployers.jsx";
 import CV from "views/CV/CV.jsx";
 
 const dashboardRoutes = [
@@ -28,13 +24,7 @@ const dashboardRoutes = [
     icon: Dashboard,
     component: DashboardPage
   },
-  {
-    path: "/user",
-    sidebarName: "User Profile",
-    navbarName: "Profile",
-    icon: Person,
-    component: UserProfile
-  },
+
   {
     path: "/alerts",
     sidebarName: "Alerts",
@@ -64,25 +54,18 @@ const dashboardRoutes = [
     component: CV
   },
   {
-    path: "/maps",
-    sidebarName: "Maps",
-    navbarName: "Map",
-    icon: LocationOn,
-    component: Maps
+    path: "/employers",
+    sidebarName: "New Employers",
+    navbarName: "New Employers",
+    icon: BookmarkBorder,
+    component: NewEmployers
   },
   {
-    path: "/notifications",
-    sidebarName: "Notifications",
-    navbarName: "Notifications",
-    icon: Notifications,
-    component: NotificationsPage
-  },
-  {
-    path: "/upgrade-to-pro",
-    sidebarName: "Upgrade To PRO",
-    navbarName: "Upgrade To PRO",
-    icon: Unarchive,
-    component: UpgradeToPro
+    path: "/user",
+    sidebarName: "User Profile",
+    navbarName: "Profile",
+    icon: Person,
+    component: UserProfile
   },
   { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
 ];

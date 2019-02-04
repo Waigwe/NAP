@@ -80,22 +80,13 @@ class CV extends React.Component {
                 Upload CV
               </h4>
               <p className={classes.cardCategoryWhite}>
-              Many of our employers use our CV database. They can also see who 'Follows' them when searching through CVs.
+                Many of our employers use our CV database. They can also see who
+                'Follows' them when searching through CVs.
               </p>
             </CardHeader>
             <CardBody className={classes.cardPlacement}>
-              <h4 color="danger"> You have no jobs saved </h4>
-              <p>
-                Use your Job Diary to keep track of jobs you like, never miss a
-                deadline and manage your applications and research.
-              </p>
+              <h4 color="danger"> Upload CV </h4>
             </CardBody>
-            <CardFooter>
-              <Button color="danger">
-                <Search />
-                Search Jobs 
-              </Button>
-            </CardFooter>
           </Card>
         </GridItem>
       </GridContainer>
